@@ -25,6 +25,10 @@ public class Program {
             System.out.println(seller);
         }
 
+        System.out.println("Seler insert");
+        Seller seller = new Seller(null, "teste", "teste@teste.com", new Date(), 1000.0, department);
+        sellerDao.insert(seller);
+        System.out.println("Inserted! New id: " + seller.getId());
 
     }
 }
